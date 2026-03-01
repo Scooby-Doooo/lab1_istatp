@@ -1,0 +1,25 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Помилка";
+}
+
+<h1 class="text-danger">Помилка.</h1>
+<h2 class="text-danger">Під час обробки вашого запиту сталася помилка.</h2>
+
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>Request ID:</strong> <code>@Model.RequestId</code>
+    </p>
+}
+
+<h3>Development Mode</h3>
+<p>
+    Перемикання на середовище <strong>Development</strong> відобразить більш детальну інформацію про помилку, що виникла.
+</p>
+<p>
+    <strong>Середовище Development не повинно бути увімкнене для розгорнутих додатків.</strong>
+    Це може призвести до відображення конфіденційної інформації з винятків кінцевим користувачам.
+    Для локального налагодження увімкніть середовище <strong>Development</strong>, встановивши змінну середовища <strong>ASPNETCORE_ENVIRONMENT</strong> на <strong>Development</strong>
+    і перезапустивши програму.
+</p>

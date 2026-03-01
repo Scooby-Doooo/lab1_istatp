@@ -1,6 +1,0 @@
-@BookSwap.Api_HostAddress = http://localhost:5010
-
-GET {{BookSwap.Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
